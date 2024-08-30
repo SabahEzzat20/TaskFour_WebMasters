@@ -29,7 +29,12 @@ header {
 .ad{
     text-align: var(--center-text);
     top: 10px;
-    
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-secondary-color);
+    padding: 5px;
 }
 nav{
     display: flex;
@@ -216,6 +221,7 @@ label{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     flex-direction: column;
     width: 50%;
     border-radius: 5px;
@@ -244,6 +250,9 @@ label{
     position: absolute;
 }
 @media screen and (max-width: 768px){
+    .ad{
+        font-size: 13px;
+    }
     nav ul{
         flex-direction: column;
         position: absolute;
