@@ -130,8 +130,7 @@ footer {
     color: var(--dark-secondary-color);
     text-align: var(--center-text);
     padding: 20px;
-    margin-top: 40px;
-    margin-top: 150px;
+    margin-top: 200px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -170,7 +169,7 @@ footer p .designer-name{
     position: relative;
     width: 70%;
     padding: 10px;
-    top: -100px;
+    top: -200px;
     box-shadow: 1px 1px 7px rgb(167, 167, 167,0.4);
 }
 .fields{
@@ -188,10 +187,7 @@ input,textarea{
 }
 textarea{
     border-bottom: 1px solid var(--primary-color);
-    background-color: var(--light-secondary-color);
-    border-radius: 5px;
-}
-textarea{
+    min-height: 70px;
     max-height: 100px;
 }
 .send-msg-btn{
@@ -232,6 +228,7 @@ label{
 }
 .contact-info ul li{
     margin: 20px 0;
+    padding: 0;
 }
 .contact-info ul li a{
     text-decoration: none;
@@ -274,8 +271,11 @@ label{
         display: block;
     }
     .contact-form{
-        width: 90%;
+        width: 100%;
         flex-direction: column;
+    }
+    .send-msg-btn{
+        width: 100%;
     }
     .contact-info{
         width: 100%;
