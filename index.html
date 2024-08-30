@@ -18,7 +18,7 @@
     </p>
     <header>
         <h1>My Advanced Blog</h1>
-        <nav aria-label="Main Navigation" class="nav">
+        <nav aria-label="Main Navigation" class="navbar">
             <button class="menu-icon">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -99,6 +99,46 @@
     </main>
 
     <footer>
+        <form action="" class="contact-form">
+            <div class="contact-info">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:sabahhassan1234a@gmail.com">sabahhassan@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="">+20 01119314797</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="#">Cairo, Egypt</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fields">
+                <div class="personal-info-contact">
+                    <div class="field ">
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name">   
+                    </div>
+                    <div class="field">
+                        <label for="email">Your Email</label>
+                        <input type="email" name="email">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="subject">Your Subject</label>
+                    <input type="text" name="subject">
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <button class="send-msg-btn" type="submit">Send</button>
+            </div>
+        </form>
         <p>All Rights Reserved © 2024 | Designed by <span class="designer-name">Sabah Hassan</span></p>
     </footer>
     <button id="back-top-btn" title="Go to top" aria-label="Scroll to top">↑</button>

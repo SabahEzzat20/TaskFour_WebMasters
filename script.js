@@ -32,8 +32,8 @@ function scrollToTop() {
 menuBar.addEventListener('click', function () {
     if (menu.style.display === 'flex') {
         menu.style.display = 'none';
-        menu.style.transition = 'display 0.4s'
     } else {
         menu.style.display = 'flex';
     }
 });
+
