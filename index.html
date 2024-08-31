@@ -1,150 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Advanced Blog</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Advanced Blog</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- optimize page loading(non-blocking css loading) -->
+        <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="style.css"></noscript>
 
-<body>
-    <div class="ad">
-        New! Keyboard shortcuts … Drive keyboard shortcuts have been updated to give you
-        first-letters navigation
-    </div>
-    <header>
-        <h1>My Advanced Blog</h1>
-        <nav aria-label="Main Navigation" class="navbar">
-            <button class="menu-icon">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <ul class="menu">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
 
-    <main class="container mt-5">
-        <section class="row">
-            <div class="col-md-8">
-                <article>
-                    <h2>First Advanced Article Title</h2>
-                    <p>
-                        This is some sample text for the first article. The full content
-                        of the article could be displayed here. Feel free to add more
-                        content and style it as needed.
-                    </p>
-                    <button class="btn btn-primary" aria-label="Read more about First Advanced Article Title">Read More</button>
-                </article>
-                <article>
-                    <h2>Second Advanced Article Title</h2>
-                    <p>
-                        This is some sample text for the second article. The full content
-                        of the article could be displayed here. Experiment with different
-                        layouts and design enhancements.
-                    </p>
-                    <button class="btn btn-primary" aria-label="Read more about Seconde Advanced Article Title">Read More</button>
-                </article>
-                <article>
-                    <h2>Third Advanced Article Title</h2>
-                    <p>
-                        This is some sample text for the third article. Challenge yourself
-                        to add more features and make the blog more interactive and
-                        user-friendly.
-                    </p>
-                    <button class="btn btn-primary" aria-label="Read more about Third Advanced Article Title">Read More</button>
-                </article>
-            </div>
-            <div class="col-md-4">
-                <aside>
-                    <h3>About the Blog</h3>
-                    <p>
-                        This blog is more advanced, requiring enhancements and
-                        restructuring. Consider adding more sections and making it dynamic
-                        with JavaScript.
-                    </p>
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About the Author</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                    </ul>
-                </aside>
-                <aside>
-                    <h3>Recent Posts</h3>
-                    <ul>
-                        <li><a href="#">How to Improve Your Blog</a></li>
-                        <li><a href="#">Understanding CSS Grid</a></li>
-                        <li><a href="#">10 JavaScript Tips and Tricks</a></li>
-                    </ul>
-                </aside>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <form action="" class="contact-form">
-            <div class="contact-info">
-                <h4>Contact Info</h4>
-                <ul>
+    <body>
+        <div class="ad">
+            New! Keyboard shortcuts … Drive keyboard shortcuts have been updated to give you
+            first-letters navigation
+        </div>
+        <header>
+            <h1>My Advanced Blog</h1>
+            <nav aria-label="Main Navigation" class="navbar">
+                <!-- responsive navigation bar icon for mobile devices screen sizes -->
+                <button class="menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="menu">
                     <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:sabahhassan1234a@gmail.com">sabah@gmail.com</a>
+                        <a href="#">Home</a>
                     </li>
                     <li>
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="">+20 01119314797</a>
+                        <a href="#">About</a>
                     </li>
                     <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <a href="#">Cairo, Egypt</a>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
                     </li>
                 </ul>
-            </div>
-            <div class="fields">
-                <div class="personal-info-contact">
-                    <div class="field ">
-                        <label for="name">Your Name</label>
-                        <input type="text" name="name">   
+            </nav>
+        </header>
+
+        <main class="container mt-5">
+            <section class="row">
+                <div class="col-md-8">
+                    <article>
+                        <h2>First Advanced Article Title</h2>
+                        <p>
+                            This is some sample text for the first article. The full content
+                            of the article could be displayed here. Feel free to add more
+                            content and style it as needed.
+                        </p>
+                        <button class="btn btn-primary" aria-label="Read more about First Advanced Article Title">Read More</button>
+                    </article>
+                    <article>
+                        <h2>Second Advanced Article Title</h2>
+                        <p>
+                            This is some sample text for the second article. The full content
+                            of the article could be displayed here. Experiment with different
+                            layouts and design enhancements.
+                        </p>
+                        <button class="btn btn-primary" aria-label="Read more about Seconde Advanced Article Title">Read More</button>
+                    </article>
+                    <article>
+                        <h2>Third Advanced Article Title</h2>
+                        <p>
+                            This is some sample text for the third article. Challenge yourself
+                            to add more features and make the blog more interactive and
+                            user-friendly.
+                        </p>
+                        <button class="btn btn-primary" aria-label="Read more about Third Advanced Article Title">Read More</button>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <aside>
+                        <div class="link-menu">
+                            <h3>About the Blog</h3>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <!-- add dropdown menu  -->
+                        <p class="dropdown-menu">
+                            This blog is more advanced, requiring enhancements and
+                            restructuring. Consider adding more sections and making it dynamic
+                            with JavaScript.
+                        </p> 
+                    </aside>
+                    <aside>
+                        <div class="link-menu">
+                            <h3>Useful Links</h3>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <!-- add dropdown menu  -->
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About the Author</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                        </ul>
+                    </aside>
+                    <aside>
+                        <div class="link-menu">
+                            <h3>Recent Posts</h3>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <!-- add dropdown menu  -->
+                        <ul class="dropdown-menu">
+                            <li><a href="#">How to Improve Your Blog</a></li>
+                            <li><a href="#">Understanding CSS Grid</a></li>
+                            <li><a href="#">10 JavaScript Tips and Tricks</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <!-- contact us form in footer  -->
+            <form action="" class="contact-form">
+                <div class="contact-info">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:sabahhassan1234a@gmail.com">sabah@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="">+20 01119314797</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a href="#">Cairo, Egypt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fields">
+                    <div class="personal-info-contact">
+                        <div class="field ">
+                            <label for="name">Your Name</label>
+                            <input type="text" name="name">   
+                        </div>
+                        <div class="field">
+                            <label for="email">Your Email</label>
+                            <input type="email" name="email">
+                        </div>
                     </div>
                     <div class="field">
-                        <label for="email">Your Email</label>
-                        <input type="email" name="email">
+                        <label for="subject">Your Subject</label>
+                        <input type="text" name="subject">
                     </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <button class="send-msg-btn" type="submit">Send</button>
                 </div>
-                <div class="field">
-                    <label for="subject">Your Subject</label>
-                    <input type="text" name="subject">
-                </div>
-                <div class="field">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message"></textarea>
-                </div>
-                <button class="send-msg-btn" type="submit">Send</button>
-            </div>
-        </form>
-        <p>All Rights Reserved © 2024 | Designed by <span class="designer-name">Sabah Hassan</span></p>
-    </footer>
-    <button id="back-top-btn" title="Go to top" aria-label="Scroll to top">↑</button>
+            </form>
+            <p>All Rights Reserved © 2024 | Designed by <span class="designer-name">Sabah Hassan</span></p>
+        </footer>
+        <!-- back to top button with entire -->
+        <button id="back-top-btn" title="Go to top" aria-label="Scroll to top">↑</button>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
 
 </html>
