@@ -13,16 +13,12 @@ Additions and Enhancements:
 - Added a simple contact form in the footer.
 Performance and Loading:
 - Optimize page loading using (non-blocking CSS loading)
-[Live Demo](https://task-four-web-masters.vercel.app/) - via Vercel Server
 
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
+- [Demo](#demo)
 
 
 ## Installation
@@ -31,4 +27,21 @@ To install and set up the project, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/johndoe/awesome-project.git
+git clone https://github.com/SabahEzzat20/TaskFour_WebMasters.git
+
+# Navigate into the directory
+cd TaskFour_WebMasters
+
+```
+## Demo
+
+- [Live Demo](https://task-four-web-masters.vercel.app/) - via Vercel Server.
+
+
+## Contact
+
+For questions or feedback, reach out to:
+
+- Sabah Hassan - sabahhassan1234a@gmail.com
+- Project Link - https://github.com/SabahEzzat20/TaskFour_WebMasters
+
